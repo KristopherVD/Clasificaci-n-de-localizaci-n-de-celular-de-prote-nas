@@ -48,7 +48,7 @@ dataset = TensorDataset(X_entrenamiento, y_entrenamiento)
 cargador = DataLoader(dataset, batch_size=32, shuffle=True)
 
 # --------------------------------------------------
-# 2. Modelo más preciso
+# 2. Modelo utilizado
 # --------------------------------------------------
 
 class RedNeuronal(nn.Module):
@@ -159,4 +159,5 @@ plt.plot(lista_exactitud)
 plt.title("Exactitud durante el entrenamiento")
 plt.xlabel("Época")
 plt.ylabel("Exactitud")
+
 plt.show()
